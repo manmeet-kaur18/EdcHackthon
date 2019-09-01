@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Im-pro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
+
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* ======================== */
+        /*   Syed Sahar Ali Raza    */
+        /* ======================== */
+        @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900italic,900);
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+
+        body {
+            background-color: #eee;
+        }
+
+        #generic_price_table {
+            background-color: #f0eded;
+        }
+
+        /*PRICE COLOR CODE START*/
+        #generic_price_table .generic_content {
+            background-color: #fff;
+        }
+
+        #generic_price_table .generic_content .generic_head_price {
+            background-color: #f6f6f6;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg {
+            border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head span {
+            color: #525252;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign {
+            color: #414141;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency {
+            color: #414141;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent {
+            color: #414141;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .month {
+            color: #414141;
+        }
+
+        #generic_price_table .generic_content .generic_feature_list ul li {
+            color: #a7a7a7;
+        }
+
+        #generic_price_table .generic_content .generic_feature_list ul li span {
+            color: #414141;
+        }
+
+        #generic_price_table .generic_content .generic_feature_list ul li:hover {
+            background-color: #E4E4E4;
+            border-left: 5px solid #007bff;
+        }
+
+        #generic_price_table .generic_content .generic_price_btn a {
+            border: 1px solid #007bff;
+            color: #007bff;
+        }
+
+        #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head_bg,
+        #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg {
+            border-color: #007bff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #007bff;
+            color: #fff;
+        }
+
+        #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span,
+        #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head span {
+            color: #fff;
+        }
+
+        #generic_price_table .generic_content:hover .generic_price_btn a,
+        #generic_price_table .generic_content.active .generic_price_btn a {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        #generic_price_table {
+            margin: 50px 0 50px 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .row .table {
+            padding: 28px 0;
+        }
+
+        /*PRICE BODY CODE START*/
+
+        #generic_price_table .generic_content {
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+        }
+
+        #generic_price_table .generic_content .generic_head_price {
+            margin: 0 0 20px 0;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_head_content {
+            margin: 0 0 50px 0;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg {
+            border-style: solid;
+            border-width: 90px 1411px 23px 399px;
+            position: absolute;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head {
+            padding-top: 20px;
+            position: relative;
+            z-index: 1;
+            color: white !important;
+            font-size: 2.2em;
+            font-weight: bold;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head span {
+            font-family: "Raleway", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag {
+            padding: 0 0 20px;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price {
+            display: block;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign {
+            display: inline-block;
+            font-family: "Lato", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            vertical-align: middle;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency {
+            font-family: "Lato", sans-serif;
+            font-size: 60px;
+            font-weight: 300;
+            letter-spacing: -2px;
+            line-height: 60px;
+            padding: 0;
+            vertical-align: middle;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent {
+            display: inline-block;
+            font-family: "Lato", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            vertical-align: bottom;
+        }
+
+        #generic_price_table .generic_content .generic_head_price .generic_price_tag .month {
+            font-family: "Lato", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            vertical-align: bottom;
+        }
+
+        #generic_price_table .generic_content .generic_feature_list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #generic_price_table .generic_content .generic_feature_list ul li {
+            font-family: "Lato", sans-serif;
+            font-size: 18px;
+            padding: 15px 0;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table .generic_content .generic_feature_list ul li:hover {
+            transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -ms-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            -webkit-transition: all 0.3s ease-in-out 0s;
+
+        }
+
+        #generic_price_table .generic_content .generic_feature_list ul li .fa {
+            padding: 0 10px;
+        }
+
+        #generic_price_table .generic_content .generic_price_btn {
+            margin: 20px 0 32px;
+        }
+
+        #generic_price_table .generic_content .generic_price_btn a {
+            border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            display: inline-block;
+            font-family: "Lato", sans-serif;
+            font-size: 18px;
+            outline: medium none;
+            padding: 12px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        #generic_price_table .generic_content,
+        #generic_price_table .generic_content:hover,
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg,
+        #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg,
+        #generic_price_table .generic_content .generic_head_price .generic_head_content .head h2,
+        #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head h2,
+        #generic_price_table .generic_content .price,
+        #generic_price_table .generic_content:hover .price,
+        #generic_price_table .generic_content .generic_price_btn a,
+        #generic_price_table .generic_content:hover .generic_price_btn a {
+            transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -ms-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            -webkit-transition: all 0.3s ease-in-out 0s;
+        }
+
+        @media (max-width: 320px) {}
+
+        @media (max-width: 767px) {
+            #generic_price_table .generic_content {
+                margin-bottom: 75px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            #generic_price_table .col-md-3 {
+                float: left;
+                width: 50%;
+            }
+
+            #generic_price_table .col-md-4 {
+                float: left;
+                width: 50%;
+            }
+
+            #generic_price_table .generic_content {
+                margin-bottom: 75px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {}
+
+        @media (min-width: 1200px) {}
+
+        #generic_price_table_home {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .text-center h1,
+        .text-center h1 a {
+            color: rgb(224, 73, 13);
+            font-size: 30px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+
+        .demo-pic {
+            margin: 0 auto;
+        }
+
+        .demo-pic:hover {
+            opacity: 0.7;
+        }
+
+        #generic_price_table_home ul {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: table;
+        }
+
+        #generic_price_table_home li {
+            float: left;
+        }
+
+        #generic_price_table_home li+li {
+            margin-left: 10px;
+            padding-bottom: 10px;
+        }
+
+        #generic_price_table_home li a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            font-size: 0px;
+        }
+
+        #generic_price_table_home .blue {
+            background: #3498DB;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table_home .emerald {
+            background: #007bff;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table_home .grey {
+            background: #7F8C8D;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table_home .midnight {
+            background: #34495E;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table_home .orange {
+            background: #E67E22;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table_home .purple {
+            background: #9B59B6;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table_home .red {
+            background: #E74C3C;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table_home .turquoise {
+            background: #1ABC9C;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table_home .blue:hover,
+        #generic_price_table_home .emerald:hover,
+        #generic_price_table_home .grey:hover,
+        #generic_price_table_home .midnight:hover,
+        #generic_price_table_home .orange:hover,
+        #generic_price_table_home .purple:hover,
+        #generic_price_table_home .red:hover,
+        #generic_price_table_home .turquoise:hover {
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        #generic_price_table_home .divider {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        #generic_price_table_home .divider span {
+            width: 100%;
+            display: table;
+            height: 2px;
+            background: #ddd;
+            margin: 50px auto;
+            line-height: 2px;
+        }
+
+        #generic_price_table_home .itemname {
+            text-align: center;
+            font-size: 50px;
+            padding: 50px 0 20px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 40px;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        #generic_price_table_home .itemnametext {
+            text-align: center;
+            font-size: 20px;
+            padding-top: 5px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        #generic_price_table_home .footer {
+            padding: 40px 0;
+        }
+
+        .price-heading {
+            text-align: center;
+        }
+
+        .price-heading h1 {
+            color: #696969;
+            font-family: 'Merienda One', cursive;
+            margin: 0;
+            padding: 0 0 50px 0;
+        }
+
+        .demo-button {
+            background-color: #333333;
+            color: #ffffff;
+            display: table;
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            outline-color: -moz-use-text-color;
+            outline-style: none;
+            outline-width: medium;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .bottom_btn {
+            background-color: #333333;
+            color: #ffffff;
+            display: table;
+            font-size: 28px;
+            margin: 60px auto 20px;
+            padding: 10px 25px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .demo-button:hover {
+            background-color: #666;
+            color: #FFF;
+            text-decoration: none;
+
+        }
+
+        .bottom_btn:hover {
+            background-color: #666;
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .buttonhistory {
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            color:black !important;
+            border:1px solid #007bff;
+            padding:4px 4px 4px 4px;
+            border-radius:8px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        
+            
+
+
+        }
+
+        .buttonhistory:hover {
+            background-color: #007bff;
+            /* Green */
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+
+        <header role="banner">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary"  >
+                  <div class="container">
+                    <a class="navbar-brand"  href="/"><img src="/img/injection.png" style="height: 40px;padding-right:15px;">Im-pro </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                      aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarsExample05">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="/main">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="/main#doctors">Records</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/adddoctor">Add Doctor</a>
+                                 <li class="nav-item">
+                          <a class="nav-link active" href="/main#feedbacks"> Feedbacks</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="/infodeliver">Deliver Message</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </header>
+    <!-- END header -->
+
+    <!-- END slider -->
+    <div class="container" id="contains1">
+        <div class="row" style="padding-top: 120px;">
+                  <!-- <div class="col-md-12">
+                      
+                      <div class="price-heading clearfix" style="padding-bottom:50px !important ;font-size:6.5em !important">
+                          <h1 style="font-size: 1.1em !important">Dr. Carl Smith Appointments </h1>
+                      </div>
+                  </div> -->
+              </div>
+    </div>
+
+    <section class="section bg-light">
+        <div id="generic_price_table" style="background-color:#f8f9fa!important;">
+            <section>
+                <div id="status"></div>
+
+                <div class="container" id="contains2">
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- END cta-link -->
+
+    <footer class="site-footer" role="contentinfo">
+            <div class="container">
+              <div class="row mb-5 element-animate">
+                
+                <div class="col-md-9 mb-5">
+                  <h3>About Us</h3>
+                  <p>
+                    <ul>
+                      Im-pro is a fully functional and robust combination of both mobile application and web application which serves some of the following purposes.<br><br>
+                      <li>  
+                      Consist of all required information and services to successfully enrol one’s child in the process of immunization and begin with the programme.
+                      </li>
+                      <li>
+                      Provide required help and assistance to the parents related to the immunization schedule,
+                      process and AEFI.  
+                      </li>
+                  </p>
+                </div>
+                <div class="col-md-3 mb-5">
+                  <h3>Location &amp; Contact</h3>
+                  <p class="mb-5">134 Street Name, City Name Here, United States</p>
+        
+                  <h4 class="text-uppercase mb-3 h6 text-white">Email</h5>
+                    <p class="mb-5"><a href="mailto:shivansh.justme@gmail.com">shivansh.justme@gmail.com</a></p>
+        
+                    <h4 class="text-uppercase mb-3 h6 text-white">Phone</h5>
+                      <p>+1 24 435 3533</p>
+        
+                </div>
+              </div>
+        
+              <div class="row pt-md-3 element-animate">
+                <div class="col-md-12">
+                  <hr class="border-t">
+                </div>
+                <div class="col-md-6 col-sm-12 copyright">
+                    <p>&copy; 2019 Im-pro. Designed &amp; Developed by CODE BREAKERS</p>
+                </div>
+                <div class="col-md-6 col-sm-12 text-md-right text-sm-left">
+                  <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
+                  <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
+                  <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+    <!-- END footer -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalAppointment" tabindex="-1" role="dialog" aria-labelledby="modalAppointmentLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAppointmentLabel">Appointment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="appointment_name" class="text-black">Full Name</label>
+                            <input type="text" class="form-control" id="appointment_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment_email" class="text-black">Email</label>
+                            <input type="text" class="form-control" id="appointment_email">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="appointment_date" class="text-black">Date</label>
+                                    <input type="text" class="form-control" id="appointment_date">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="appointment_time" class="text-black">Time</label>
+                                    <input type="text" class="form-control" id="appointment_time">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="appointment_message" class="text-black">Message</label>
+                            <textarea name="" id="appointment_message" class="form-control" cols="30"
+                                rows="10"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/bootstrap-datepicker.js"></script>
+    <script src="/js/jquery.timepicker.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src="/js/appointment.js"></script>
+</body>
+
+</html>

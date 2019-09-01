@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>IM-pro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header role="banner">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary"  >
+      <div class="container">
+        <a class="navbar-brand"  href="/"><img src="/img/injection.png" style="height: 40px;padding-right:15px;">Im-pro </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/main">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/main#doctors">Records</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/adddoctor">Add Doctor</a>
+                     <li class="nav-item">
+              <a class="nav-link active" href="/main#feedbacks"> Feedbacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/infodeliver">Deliver Message</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/updatevaccinedetail">Updates</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END header -->
+
+  <section class="home-slider owl-carousel">
+    <div class="slider-item" style="background-image: url('https://media.healthday.com/Images/icimages/toddler_shot22.jpg');opacity: 0.69;">
+
+      <div class="container">
+        <div class="row slider-text align-items-center">
+          <div class="col-md-7 col-sm-12 element-animate">
+            <h1 style="color:black;font-family: 'Merienda One', cursive;">Immune our generation</h1>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="slider-item" style="background-image: url('https://media.healthday.com/Images/icimages/toddler_shot22.jpg');opacity: 0.69;">
+      <div class="container">
+        <div class="row slider-text align-items-center">
+          <div class="col-md-7 col-sm-12 element-animate">
+            <h1 style="color:black;font-family: 'Merienda One', cursive;">A healthy start for children !</h1>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- END slider -->
+
+
+  <section class="container home-feature mb-5" >
+    <div class="row">
+      <div class="col-md-6 p-0 one-col element-animate">
+        <div class="col-inner p-xl-5 p-lg-5 p-md- p-sm-4 p-4" style="margin-left: auto;">
+          <span class="icon flaticon-hospital-bed"></span>
+          <h2>Doctor Appointments</h2>
+          <p>Check out your appointment details and records. Get along with your Doctor.
+          </p>
+        </div>
+        <a href="/main#doctors" class="btn-more">Manage</a>
+      </div>
+      <div class="col-md-6 p-0 two-col element-animate">
+        <div class="col-inner p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
+          <span class="icon flaticon-first-aid-kit"></span>
+          <h2>Vaccine Stock</h2>
+          <p>Get update about the current stock of the vaccines in your nearest hospital. Get realtime update and 
+            maintain the stocks accordingly.</p>
+        </div>
+        <a href="/medicines" class="btn-more">Get Info</a>
+      </div>
+      <!-- <div class="col-md-4 p-0 three-col element-animate">
+        <div class="col-inner p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
+          <span class="icon flaticon-hospital"></span>
+          <h2>Blood Bank and Ambulance Services</h2>
+          <p>Get note about the current blood group available in the blood bank of your hospital. Get alert related to
+            emergency with current location</p>
+        </div>
+        <a href="/bloodbank" class="btn-more">Read More</a>
+      </div> -->
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="section bg-light" id="doctors">
+    <div class="container">
+      <div class="row justify-content-center mb-5 element-animate">
+        <div class="col-md-8 text-center mb-5">
+          <h2 class="text-uppercase heading border-bottom mb-4">Doctors Appointment</h2>
+          <p class="mb-0 lead">Look into the appointment of each and every doctor and manage them simultaneously.</p>
+        </div>
+      </div>
+      <div class="row element-animate">
+        <div id="status"></div>
+        <div class="major-caousel js-carousel-1 owl-carousel" id="containerscroll">
+      
+          <!-- <div>
+            <div class="media d-block media-custom text-center">
+              <div class="media-body">
+                <h3 class="mt-0 text-black">Dr. Carl Smith</h3>
+                <p>Neurosurgeon with an experiance of 20 years.He has a speciality in the Neurology and Neuropathology
+                </p>
+                <p class="element-animate"><a href="/appointments/1" class="btn btn-primary btn-lg">Get In Touch</a></p>
+                <p>
+                  <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
+                  <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
+                  <a href="#" class="p-2"><span class="fa fa-linkedin"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="media d-block media-custom text-center">
+              
+              <div class="media-body">
+                <h3 class="mt-0 text-black">Dr. Janice Doe</h3>
+                <p>Heartspecialist worked in AIMS, pursued degree from pennyslevia and cuurently working on nanomedicine
+                  technology</p>
+                <p class="element-animate"><a href="/appointments/2" class="btn btn-primary btn-lg">Get In Touch</a></p>
+                <p>
+                  <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
+                  <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
+                  <a href="#" class="p-2"><span class="fa fa-linkedin"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="media d-block media-custom text-center">
+              
+              <div class="media-body">
+                <h3 class="mt-0 text-black">Dr. Jean Doe</h3>
+                <p>Dentist having an experiance of 5 years with speciality in Oral and Maxillofacial Pathology</p>
+                <p class="element-animate"><a href="/appointments/3" class="btn btn-primary btn-lg">Get In Touch</a></p>
+                 <p>
+                  <a href="#" class="p-2"><span class="fa fa-envelope"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+              <div class="media d-block media-custom text-center">
+                
+                <div class="media-body">
+        
+                  <h3 class="mt-0 text-black">Dr. Jean Doe</h3>
+                  <p>Dentist having an experiance of 5 years with speciality in Oral and Maxillofacial Pathology</p>
+                  <p class="element-animate"><a href="/appointments/3" class="btn btn-primary btn-lg">Get In Touch</a></p>
+                   <p>
+                    <a href="#" class="p-2"><span class="fa fa-envelope"></span></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+        </div> -->
+        <!-- END slider -->
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+  <!-- <a href="#" class="cta-link element-animate" data-aniamte-effect="fadeIn" data-toggle="modal" data-target="#modalAppointment">
+      <span class="sub-heading">Ready to Visit?</span>
+      <span class="heading">Make an Appointment</span>
+    </a> -->
+
+    <section id="chart">
+      <div class="container">
+        <canvas id="myChart"></canvas>
+      </div>
+    
+    </section>
+    <br>
+    <br>
+    <br> <br> <br> <br>
+  <section class="cover_1" style="background-image: url(img/bg_1.jpg);">
+    <div class="container">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-10">
+          <h2 class="heading element-animate">Experience Our Advance Facilities</h2>
+          <p class="sub-heading element-animate mb-5">And fight against some deadly diseases like Chicken Pox, Rotavirus, Pertussis and many more.
+            Start early, start today and lay a healthy foundation for your child.
+          </p>
+          <p class="element-animate"><a href="https://www.who.int/topics/immunization/en/" class="btn btn-primary btn-lg">More on immunization.</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="section bg-light" id="feedbacks">
+    <div class="container">
+      <div class="row justify-content-center mb-5 element-animate">
+        <div class="col-md-8 text-center mb-5">
+          <h2 class="text-uppercase heading border-bottom mb-4">Feedbacks</h2>
+          <p class="mb-0 lead">Feedback always help to develop and come up with more improvisations.
+            Leave your valuable suggestions here.
+          </p>
+          <br>
+          <br>
+          <section id="feedbackform">
+         
+            <textarea placeholder="Type here..."name="comments" id="comments" style="width:96%;height:90px;background-color:rgb(255, 255, 255);color:black;border:solid black 1px;;padding:2%;font:22px/30px sans-serif;">
+</textarea>
+            <input type="submit" id="submitfeedback" value="Submit" style="background-color:rgb(0,123,255);color:white;padding:5px;font-size:18px;border-color:rgb(0,123,255);border-radius:5%;padding:8px;">
+        
+          </section>
+        </div>
+      </div>
+      <div class="row element-animate">
+        <div id="status"></div>
+        <div class="major-caousel js-carousel-2 owl-carousel" id="containerfeedback">
+          <!-- <div>
+            <div class="media d-block media-custom text-left">
+              <img src="img/img_thumb_1.jpg" alt="Image Placeholder" class="img-fluid">
+              <div class="media-body">
+                <span class="meta-post">December 2, 2017</span>
+                <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="clearfix">
+                  <a href="#" class="float-left">Read more</a>
+                  <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 8</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="media d-block media-custom text-left">
+              <img src="img/img_thumb_2.jpg" alt="Image Placeholder" class="img-fluid">
+              <div class="media-body">
+                <span class="meta-post">December 2, 2017</span>
+                <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="clearfix">
+                  <a href="#" class="float-left">Read more</a>
+                  <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 2</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="media d-block media-custom text-left">
+              <img src="img/img_thumb_3.jpg" alt="Image Placeholder" class="img-fluid">
+              <div class="media-body">
+                <span class="meta-post">December 2, 2017</span>
+                <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="clearfix">
+                  <a href="#" class="float-left">Read more</a>
+                  <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 5</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="media d-block media-custom text-left">
+              <img src="img/img_thumb_4.jpg" alt="Image Placeholder" class="img-fluid">
+              <div class="media-body">
+                <span class="meta-post">December 2, 2017</span>
+                <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="clearfix">
+                  <a href="#" class="float-left">Read more</a>
+                  <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 7</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="media d-block media-custom text-left">
+              <img src="img/img_thumb_1.jpg" alt="Image Placeholder" class="img-fluid">
+              <div class="media-body">
+                <span class="meta-post">December 2, 2017</span>
+                <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="clearfix">
+                  <a href="#" class="float-left">Read more</a>
+                  <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 1</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="media d-block media-custom text-left">
+              <div class="media-body">
+                <span class="meta-post">December 2, 2017</span>
+                <h3 class="mt-0 text-black">Lorem ipsum dolor sit amet elit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="clearfix">
+                  <a href="#" class="float-left">Read more</a>
+                  <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 4</a>
+                </p> 
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="media d-block media-custom text-left">
+              <img src="img/img_thumb_3.jpg" alt="Image Placeholder" class="img-fluid">
+              <div class="media-body">
+                <span class="meta-post">December 2, 2017</span>
+                <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="clearfix">
+                  <a href="#" class="float-left">Read more</a>
+                  <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 12</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="media d-block media-custom text-left">
+              <img src="img/img_thumb_4.jpg" alt="Image Placeholder" class="img-fluid">
+              <div class="media-body">
+                <span class="meta-post">December 2, 2017</span>
+                <h3 class="mt-0 text-black"><a href="#" class="text-black">Lorem ipsum dolor sit amet elit</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="clearfix">
+                  <a href="#" class="float-left">Read more</a>
+                  <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 14</a>
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+        <!-- END slider -->
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <!-- END cta-link -->
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row mb-5 element-animate">
+        
+        <div class="col-md-9 mb-5">
+          <h3>About Us</h3>
+          <p>
+            <ul>
+              Im-pro is a fully functional and robust combination of both mobile application and web application which serves some of the following purposes.<br><br>
+              <li>  
+              Consist of all required information and services to successfully enrol one’s child in the process of immunization and begin with the programme.
+              </li>
+              <li>
+              Provide required help and assistance to the parents related to the immunization schedule,
+              process and AEFI.  
+              </li>
+          </p>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Location &amp; Contact</h3>
+          <p class="mb-5">134 Street Name, City Name Here, United States</p>
+
+          <h4 class="text-uppercase mb-3 h6 text-white">Email</h5>
+            <p class="mb-5"><a href="mailto:shivansh.justme@gmail.com">shivansh.justme@gmail.com</a></p>
+
+            <h4 class="text-uppercase mb-3 h6 text-white">Phone</h5>
+              <p>+1 24 435 3533</p>
+
+        </div>
+      </div>
+
+      <div class="row pt-md-3 element-animate">
+        <div class="col-md-12">
+          <hr class="border-t">
+        </div>
+        <div class="col-md-6 col-sm-12 copyright">
+            <p>&copy; 2019 Im-pro. Designed &amp; Developed by CODE BREAKERS</p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-md-right text-sm-left">
+          <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
+          <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
+          <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalAppointment" tabindex="-1" role="dialog" aria-labelledby="modalAppointmentLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAppointmentLabel">Appointment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <label for="appointment_name" class="text-black">Full Name</label>
+              <input type="text" class="form-control" id="appointment_name">
+            </div>
+            <div class="form-group">
+              <label for="appointment_email" class="text-black">Email</label>
+              <input type="text" class="form-control" id="appointment_email">
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="appointment_date" class="text-black">Date</label>
+                  <input type="text" class="form-control" id="appointment_date">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="appointment_time" class="text-black">Time</label>
+                  <input type="text" class="form-control" id="appointment_time">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="appointment_message" class="text-black">Message</label>
+              <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn btn-primary">
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ 
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  <script src="js/alerts.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/chartstock.js"></script>
+</body>
+
+</html>

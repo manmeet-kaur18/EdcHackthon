@@ -1,0 +1,20 @@
+{
+  "name": "sms-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "findage": "^30.0.0",
+    "full-age-calculator": "0.0.4",
+    "mongodb": "^2.2.36",
+    "nexmo": "^2.4.1",
+    "node-cron": "^2.0.3"
+  }
+}
