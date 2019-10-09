@@ -8,7 +8,7 @@ var async = require("async");
 const app = express();
 var nodemailer = require('nodemailer');
 var distance = require('google-distance');
-distance.apiKey = 'AIzaSyBl_MwSYokMdYuIQq6PPAoVgJFMdelLF0k';
+distance.apiKey = 'Enter your api key here';
 var calculateFullAge = require('full-age-calculator');
  
 // serve files from the public directory
