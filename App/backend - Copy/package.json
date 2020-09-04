@@ -14,7 +14,7 @@
     "express": "^4.17.1",
     "full-age-calculator": "0.0.4",
     "google-distance": "^1.0.1",
-    "mongodb": "^2.2.36",
+    "mongodb": "^3.1.13",
     "nodemailer": "^6.2.1"
   }
 }
